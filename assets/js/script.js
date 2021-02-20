@@ -42,18 +42,18 @@ function generatePassword () {
   window.alert("Your password will be " + userInputPasswordLength + " characters long!");
 
   // Prompts the user for the character types to include 
-  var userChoiceLowerCaseChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude \nLowercase Characters in your password!");
-  var userChoiceUpperCaseChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude \nUppercase Characters in your password!");
-  var userChoiceNumericChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude \nNumeric Characters in your password!");
-  var userChoiceSpecialChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude \nSpecial Characters in your password!");
+  var userChoiceLowerCaseChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude... \nLowercase Characters in your password!");
+  var userChoiceUpperCaseChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude... \nUppercase Characters in your password!");
+  var userChoiceNumericChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude... \nNumeric Characters in your password!");
+  var userChoiceSpecialChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude... \nSpecial Characters in your password!");
 
   // Validates if the user selected at least one character type 
   while (!((userChoiceLowerCaseChar === 'Y' || userChoiceLowerCaseChar === 'y') || (userChoiceUpperCaseChar === 'Y' || userChoiceUpperCaseChar === 'y') || (userChoiceNumericChar === 'Y' || userChoiceNumericChar === 'y') || (userChoiceSpecialChar === 'Y' || userChoiceSpecialChar === 'y'))) {
     window.alert("You Must Choose (Y or y) to include at least 1 Character Type!")
-    var userChoiceLowerCaseChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude \nLowercase Characters in your password!");
-    var userChoiceUpperCaseChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude \nUppercase Characters in your password!");
-    var userChoiceNumericChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude \nNumeric Characters in your password!");
-    var userChoiceSpecialChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude \nSpecial Characters in your password!");
+    var userChoiceLowerCaseChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude... \nLowercase Characters in your password!");
+    var userChoiceUpperCaseChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude... \nUppercase Characters in your password!");
+    var userChoiceNumericChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude... \nNumeric Characters in your password!");
+    var userChoiceSpecialChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude... \nSpecial Characters in your password!");
   }
   // Confirm if lowerCase (Yes or No - Boolean ) / return --> Need variables
 
