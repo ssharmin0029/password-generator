@@ -32,7 +32,7 @@ function generatePassword () {
   // Prompts the user for the length of the password (between 8-128 inclusive)
   var userInputPasswordLength = window.prompt("Enter a number to choose the length of your password!\n(A length Between 8-128 Characters)");
 
-  // Validates if the user entered a correct length within the specified parameter 
+  // Validates if the user entered a numeric value within the specified parameter 
   while (!(userInputPasswordLength >= 8 && userInputPasswordLength <= 128)) {
     window.alert("INVALID VALUE!")
     userInputPasswordLength = window.prompt("The password Must Be 8 to 128 characters long!\nEnter a New Number!");
@@ -58,8 +58,26 @@ function generatePassword () {
   
   // var userLength = 
   // var confirmPasswod = confirmLowerCase.concat(confirmUpperCase);
-
   // Math.Floor(Math.Random() * length of the array confirmPasswrod) 
+  var userChoicePassword = [];
+  if (userChoiceLowerCaseChar === 'Y' || userChoiceLowerCaseChar === 'y') {
+    userChoicePassword = userChoicePassword.concat(lowerCaseChar);
+  }
+
+  if (userChoiceUpperCaseChar === 'Y' || userChoiceUpperCaseChar === 'y') {
+    userChoicePassword = userChoicePassword.concat(upperCaseChar);
+  }
+
+  if (userChoiceNumericChar === 'Y' || userChoiceNumericChar === 'y') {
+    userChoicePassword = userChoicePassword.concat(numericChar);
+  }
+
+  if (userChoiceSpecialChar === 'Y' || userChoiceSpecialChar === 'y') {
+    userChoicePassword = userChoicePassword.concat(specialChar);
+  }
+
+  
+  console.log(userChoicePassword);
 
   return;
 }
