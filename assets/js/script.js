@@ -30,7 +30,7 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword () {
 
   // Prompts the user for the length of the password (between 8-128 inclusive)
-  var userInputPasswordLength = window.prompt("Enter a number to choose the length of your password!\n\n(A length Between 8-128 Characters)");
+  var userInputPasswordLength = window.prompt("Enter a number to choose the length of your password!\n(A length Between 8-128 Characters)");
 
   // Validates if the user entered a correct length within the specified parameter 
   while (!(userInputPasswordLength >= 8 && userInputPasswordLength <= 128)) {
