@@ -55,17 +55,13 @@ function generatePassword () {
     var userChoiceNumericChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude... \nNumeric Characters in your password!");
     var userChoiceSpecialChar = window.prompt("Enter: (Y / y) to Include or (N / n) to Exclude... \nSpecial Characters in your password!");
   }
-  // Confirm if lowerCase (Yes or No - Boolean ) / return --> Need variables
-
-  // var confirmLowerCase = 
-  // var confirmUpperCase =
-
+  
   // var userLength = 
   // var confirmPasswod = confirmLowerCase.concat(confirmUpperCase);
 
   // Math.Floor(Math.Random() * length of the array confirmPasswrod) 
 
-  return "hello world";
+  return;
 }
 
 
