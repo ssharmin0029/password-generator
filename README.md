@@ -18,4 +18,3 @@
 
 ## Deployed Application URL
 https://ssharmin0029.github.io/password-generator/
-

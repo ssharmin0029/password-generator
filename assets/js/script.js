@@ -89,7 +89,12 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  // Checks to see if the string is undefined; doesn't write if so
+  if (password === undefined) {
+    return;
+  } else {
+    passwordText.value = password;
+  }
 }
 
 // Add event listener to generate button
