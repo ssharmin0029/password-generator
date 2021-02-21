@@ -54,35 +54,34 @@
    
    // Declares an empty array to store character types chosen by the user 
    var userChoiceCharTypes = [];
+   // Declares an empty string to store name(s) of the character type(s) 
+   var nameOfCharTypes = '';
    
-   // Checks each user input to see if the user choice is equal to 'Y'; if equal then concats that corresponding array to a new array 
+   // Checks each user input to see if the user choice is equal to 'Y'; if equal then concats that corresponding array to a new array
+   // Also adds name(s) of the character types(s) in the empty string  
    if (userChoiceLowerCaseChar === 'Y') {
      userChoiceCharTypes = userChoiceCharTypes.concat(lowerCaseChar);
+     nameOfCharTypes = nameOfCharTypes + "(Lowercase)" + " ";
    }
    
    if (userChoiceUpperCaseChar === 'Y') {
      userChoiceCharTypes = userChoiceCharTypes.concat(upperCaseChar);
+     nameOfCharTypes = nameOfCharTypes + "(Uppercase)" + " ";
    }
    
    if (userChoiceNumericChar === 'Y') {
      userChoiceCharTypes = userChoiceCharTypes.concat(numericChar);
+     nameOfCharTypes = nameOfCharTypes + "(Numeric)" + " ";
    }
    
    if (userChoiceSpecialChar === 'Y') {
      userChoiceCharTypes = userChoiceCharTypes.concat(specialChar);
+     nameOfCharTypes = nameOfCharTypes + "(Special) ";
    }
    
    //-------------------------------------------------------------------------
-   // Declares an empty string to store characters from chosen type(s) 
-   var userChosenCharacters = "";
-   
-   // Loops through the array and stores in the empty string 
-   for (var i = 0; i <= userChoiceCharTypes.length - 1; i++) {
-     userChosenCharacters = userChosenCharacters + ' ' + userChoiceCharTypes[i];
-   }
-   
-   // Notifies the user with the list of characters 
-   window.alert("Your Choice of character type(s): " + userChosenCharacters);
+   // Notifies the user of chosen character type(s) 
+   window.alert("Your Choice of character type(s): " + nameOfCharTypes + "Characters");
    //-------------------------------------------------------------------------
    
    // Declares an empty string to store the randomly generated password 
