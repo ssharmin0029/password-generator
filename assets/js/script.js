@@ -46,7 +46,7 @@
    // Validates if the user selected at least 1 character type 
    while (userChoiceLowerCaseChar !== 'Y' && userChoiceUpperCaseChar !== 'Y' && userChoiceNumericChar !== 'Y' && userChoiceSpecialChar !== 'Y') {
      // Alerts the user to choose at least 1 character type
-     window.alert("You Must Choose (Y or y) to include at least 1 Character Type!");
+     window.alert("You Must Choose (Y) to include at least 1 Character Type!");
      
      // Function call to prompt the user to select character types 
      promptUserForCharTypes();
