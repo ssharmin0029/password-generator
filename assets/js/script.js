@@ -1,9 +1,3 @@
- // Declare empty variables to store string values 
- var userChoiceLowerCaseChar = '';
- var userChoiceUpperCaseChar = '';
- var userChoiceNumericChar = '';
- var userChoiceSpecialChar = '';
- 
  // Define arrays to store characters to generate a random password
  var lowerCaseChar = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
  var upperCaseChar = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -32,6 +26,12 @@
    // Notifies the user about the chosen password length 
    window.alert("Your password will be " + userInputPasswordLength + " characters long!");
    
+   // Declare empty variables to store string values 
+   var userChoiceLowerCaseChar = '';
+   var userChoiceUpperCaseChar = '';
+   var userChoiceNumericChar = '';
+   var userChoiceSpecialChar = '';
+
    // Function defintion to prompt the user to select character types 
    function promptUserForCharTypes () {
      userChoiceLowerCaseChar = window.prompt("Enter: (Y) to Include or (N) to Exclude... \nLowercase Characters in your password!").toUpperCase();
