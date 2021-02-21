@@ -11,12 +11,19 @@
    
    // Validates if the user entered a numeric value within the specified parameter 
    while (!(userInputPasswordLength >= 8 && userInputPasswordLength <= 128)) {
-     // Alerts user the input value is invalid
-     window.alert("INVALID VALUE!");
-     userInputPasswordLength = window.prompt("The password Must Be 8 to 128 characters long!\nEnter a New Number!");
-    }
+     // If the user clicks the Cancel button (null) --> end function execution 
+     if(userInputPasswordLength === null) {
+       return;
+     } 
+     // Alerts the user the entered value is empty
+     if (userInputPasswordLength === '') {
+       window.alert("Your Input is Empty! Try Again!")
+     }
+     // Prompts the user to enter a numeric value within the specified parameter 
+     userInputPasswordLength = window.prompt("Enter a Numeric Value!\nIt MUST be  between 8 to 128 characters!");
+   }
 
-   // Notifies user about the chosen password length 
+   // Notifies the user about the chosen password length 
    window.alert("Your password will be " + userInputPasswordLength + " characters long!");
    
    // Prompts the user to select the character types 
