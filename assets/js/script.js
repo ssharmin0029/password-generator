@@ -17,7 +17,7 @@
      } 
      // Alerts the user the entered value is empty
      if (userInputPasswordLength === '') {
-       window.alert("Your Input is Empty! Try Again!")
+       window.alert("Your Input is Empty! Try Again!");
      }
      // Prompts the user to enter a numeric value within the specified parameter 
      userInputPasswordLength = window.prompt("Enter a Numeric Value!\nIt MUST be between 8 to 128 characters!");
