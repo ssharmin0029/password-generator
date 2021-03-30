@@ -13,6 +13,9 @@
 ![alt text](assets/images/final-page-9.png)
 
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 ## Description 
 In this assignment we were asked to write an application that enables employees to generate  passwords randomly. For employees it is extremely important that they can create passwords, which are secured as they access sensitive data on a daily basis. Therefore we were given an acceptance criteria using which they can indeed create a strong and secure password. 
 
@@ -22,7 +25,7 @@ It was a very interesting program to write as it involved multiple steps, which 
 
 Along the way I made sure to leave comments. Once I was done, I cleaned up the code, tested functionality  and fixed bugs when found any. Later, I optimized the code while repeating the same process as earlier. There was a lot to play with, which required teaching myself, do hands on work and learn in the process. Not only it was a help to the employees but I was able to develop my own skills further. 
 
-To name some, here is what I did and used:
+To name some, here is what I did and used (JS):
 - Declared Variables 
 - Defined Arrays 
 - Defined function plus wrote a helper function 
@@ -34,3 +37,6 @@ To name some, here is what I did and used:
 
 ## Deployed Application URL
 [password-generator](https://ssharmin0029.github.io/password-generator/)
+
+
+[Click Here to Contact](https://ssharmin0029.github.io/portfolio-website-ss/)
