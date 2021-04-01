@@ -37,6 +37,3 @@ To name some, here is what I did and used (JS):
 
 ## Deployed Application URL
 [password-generator](https://ssharmin0029.github.io/password-generator/)
-
-
-[Click Here to Contact](https://ssharmin0029.github.io/portfolio-website-ss/)
